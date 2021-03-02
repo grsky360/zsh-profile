@@ -7,9 +7,6 @@ alias gc='git commit'
 alias gs='git status'
 alias gco='git checkout'
 
-alias kubectl='multipass exec podman kubectl'
-alias minikube='multipass exec podman minikube'
-
 alias jdk8="export JAVA_HOME='$(/usr/libexec/java_home -v 1.8)'"
 alias jdk11="export JAVA_HOME='$(/usr/libexec/java_home -v 11)'"
 alias jdk15="export JAVA_HOME='$(/usr/libexec/java_home -v 15)'"

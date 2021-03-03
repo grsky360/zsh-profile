@@ -8,6 +8,7 @@ alias gs='git status'
 alias gco='git checkout'
 
 alias dc="docker-compose"
+alias pc="podman-compose"
 
 alias jdk8="export JAVA_HOME='$(/usr/libexec/java_home -v 1.8)'"
 alias jdk11="export JAVA_HOME='$(/usr/libexec/java_home -v 11)'"

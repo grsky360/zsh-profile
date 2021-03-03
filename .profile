@@ -61,6 +61,8 @@ zinit ice as="completion"
 zinit snippet 'https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker'
 zinit ice as="completion"
 zinit snippet 'https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose'
+zinit ice as="completion"
+zinit snippet 'https://github.com/containers/podman/blob/master/completions/zsh/_podman'
 
 [ -f ~/.hconfig/.env.profile ] && source ~/.hconfig/.env.profile
 [ -f ~/.hconfig/.alias.profile ] && source ~/.hconfig/.alias.profile

@@ -57,8 +57,10 @@ zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
 zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
 zinit ice mv="*.zsh -> _exa" as="completion"
 zinit snippet 'https://github.com/ogham/exa/tree/master/completions/completions.zsh'
-
-
+zinit ice as="completion"
+zinit snippet 'https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker'
+zinit ice as="completion"
+zinit snippet 'https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose'
 
 [ -f ~/.hconfig/.env.profile ] && source ~/.hconfig/.env.profile
 [ -f ~/.hconfig/.alias.profile ] && source ~/.hconfig/.alias.profile

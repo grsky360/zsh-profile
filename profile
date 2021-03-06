@@ -64,8 +64,8 @@ zinit snippet 'https://github.com/docker/compose/blob/master/contrib/completion/
 zinit ice as="completion"
 zinit snippet 'https://github.com/containers/podman/blob/master/completions/zsh/_podman'
 
-[ -f ~/.hconfig/.env.profile ] && source ~/.hconfig/.env.profile
-[ -f ~/.hconfig/.alias.profile ] && source ~/.hconfig/.alias.profile
+[ -f ~/.zsh-profile/env.profile ] && source ~/.zsh-profile/env.profile
+[ -f ~/.zsh-profile/alias.profile ] && source ~/.zsh-profile/alias.profile
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

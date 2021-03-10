@@ -21,4 +21,6 @@ alias drone="DRONE_SERVER=https://ci.ilio.tech DRONE_TOKEN=3Y3L6ldYf2Gl4337cywjC
 alias docker-shell="docker run -it --rm --privileged --pid=host alpine nsenter -t 1 -m -u -n -i sh"
 alias docker-alpine="docker run -it --rm alpine /bin/sh"
 alias docker-alpine-mirror="docker run -it --rm alpine /bin/sh -c \"sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && /bin/sh\""
-alias docker-attach="_attach(){ docker exec -it \$1 /bin/sh }; _attach"
+function docker-attach() {
+    docker exec -it $1 /bin/sh
+}

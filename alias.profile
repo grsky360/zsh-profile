@@ -24,3 +24,7 @@ alias docker-alpine-mirror="docker run -it --rm alpine /bin/sh -c \"sed -i 's/dl
 function docker-attach() {
     docker exec -it $1 /bin/sh
 }
+
+function docker-attach-new() {
+    docker run -it --rm $@
+}

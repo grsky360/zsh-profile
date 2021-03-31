@@ -63,6 +63,8 @@ zinit ice as="completion"
 zinit snippet 'https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose'
 zinit ice as="completion"
 zinit snippet 'https://github.com/containers/podman/blob/master/completions/zsh/_podman'
+zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
+zinit light g-plane/zsh-yarn-autocompletions
 
 [ -f ~/.zsh-profile/env.profile ] && source ~/.zsh-profile/env.profile
 [ -f ~/.zsh-profile/alias.profile ] && source ~/.zsh-profile/alias.profile

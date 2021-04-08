@@ -13,8 +13,8 @@ alias anywhere='http-server'
 
 alias dc="docker-compose"
 
-alias jdk8="export JAVA_HOME='$(/usr/libexec/java_home -v 1.8)'"
-alias jdk11="export JAVA_HOME='$(/usr/libexec/java_home -v 11)'"
+alias jdk8='export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"'
+alias jdk11='export JAVA_HOME="$(/usr/libexec/java_home -v 11)"'
 alias jdk15='export JAVA_HOME="$(/usr/libexec/java_home -v 15)"'
 jdk11
 
@@ -33,3 +33,6 @@ function docker-attach() {
 function docker-attach-new() {
     docker run -it --rm $@
 }
+
+
+alias gradlew="./gradlew"

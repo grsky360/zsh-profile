@@ -1,6 +1,6 @@
-export HBINS="~/Documents/bins/"
+export HBINS="$HOME/Documents/bins/"
 
-export ANDROID_PLATFORM_TOOLS="~/Library/Android/sdk/platform-tools"
+export ANDROID_PLATFORM_TOOLS="$HOME/Library/Android/sdk/platform-tools"
 
-export PATH=$ANDROID_PLATFORM_TOOLS:$HBINS:"$PATH"
+export PATH=$ANDROID_PLATFORM_TOOLS:$HBINS:$PATH
 

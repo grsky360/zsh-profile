@@ -1,5 +1,5 @@
 alias ls='exa'
-alias ll='ls -lFh'
+alias ll='ls -lFhg'
 alias la='ls -a'
 alias l='ls -CF'
 alias ga='git add'
@@ -13,10 +13,16 @@ alias anywhere='http-server'
 
 alias dc="docker-compose"
 
-alias jdk8='export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"'
-alias jdk11='export JAVA_HOME="$(/usr/libexec/java_home -v 11)"'
-alias jdk15='export JAVA_HOME="$(/usr/libexec/java_home -v 15)"'
-jdk11
+function jdk() {
+    version=$1
+    if [ $# = 0 ]; then
+        version=1.8
+    fi
+    export JAVA_HOME="$(/usr/libexec/java_home -v ${version})"
+}
+alias jdk8="jdk 1.8"
+alias jdk11="jdk 11"
+jdk 1.8
 
 alias sdkmanager="jdk8 && sdkmanager"
 

@@ -30,8 +30,6 @@ zinit light-mode for \
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-# zicompinit; zicdreplay
-
 # Base Config
 zinit light Aloxaf/fzf-tab
 zinit light paulirish/git-open
@@ -43,10 +41,6 @@ zinit wait lucid light-mode for \
         zsh-users/zsh-autosuggestions \
     blockf atpull'zinit creinstall -q .' \
         zsh-users/zsh-completions
-
-# zinit light zsh-users/zsh-completions
-# zinit light zsh-users/zsh-autosuggestions
-# zinit light zdharma/fast-syntax-highlighting
 
 # OMZ Config
 zinit snippet OMZ::lib/git.zsh
@@ -74,7 +68,7 @@ zinit ice as="completion"
 zinit snippet 'https://github.com/containers/podman/blob/master/completions/zsh/_podman'
 zinit ice wait lucid atload"zicompinit; zicdreplay" atclone'./zplug.zsh'
 zinit light g-plane/zsh-yarn-autocompletions
-zinit ice svn lucid nocompile as'completion' pick'null' wait
+zinit ice lucid nocompile as'completion' pick'null' wait
 zinit snippet OMZ::plugins/gradle
 
 [ -f ~/.zsh-profile/env.profile ] && source ~/.zsh-profile/env.profile

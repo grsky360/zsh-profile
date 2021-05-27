@@ -64,8 +64,6 @@ zinit ice as="completion"
 zinit snippet 'https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker'
 zinit ice as="completion"
 zinit snippet 'https://github.com/docker/compose/blob/master/contrib/completion/zsh/_docker-compose'
-zinit ice as="completion"
-zinit snippet 'https://github.com/containers/podman/blob/master/completions/zsh/_podman'
 zinit ice wait lucid atload"zicompinit; zicdreplay" atclone'./zplug.zsh'
 zinit light g-plane/zsh-yarn-autocompletions
 zinit ice lucid nocompile as'completion' pick'null' wait

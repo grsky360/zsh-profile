@@ -52,9 +52,9 @@ zinit snippet OMZ::lib/theme-and-appearance.zsh
 
 # Binary support
 zinit as="null" wait="1" lucid from="gh-r" for \
-    mv="exa* -> exa" sbin       ogham/exa \
-    # mv="*/rg -> rg"  sbin		BurntSushi/ripgrep \
-    mv="fd* -> fd"   sbin="fd/fd"  @sharkdp/fd \
+    mv="exa* -> exa" sbin="bin/exa" ogham/exa \
+    mv="*/rg -> rg"  sbin           BurntSushi/ripgrep \
+    mv="fd* -> fd"   sbin="fd/fd"   @sharkdp/fd \
     sbin="fzf"       junegunn/fzf
 
 

@@ -51,9 +51,12 @@ zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/theme-and-appearance.zsh
 
 # Binary support
-zinit wait"1" lucid from"gh-r" as"null" for \
-     sbin"fzf"          junegunn/fzf \
-     sbin"exa* -> exa"  ogham/exa
+zinit as="null" wait="1" lucid from="gh-r" for \
+    mv="exa* -> exa" sbin       ogham/exa \
+    # mv="*/rg -> rg"  sbin		BurntSushi/ripgrep \
+    mv="fd* -> fd"   sbin="fd/fd"  @sharkdp/fd \
+    sbin="fzf"       junegunn/fzf
+
 
 zinit ice mv="*.zsh -> _fzf" as="completion"
 zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'

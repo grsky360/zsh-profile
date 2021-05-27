@@ -51,15 +51,15 @@ zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/theme-and-appearance.zsh
 
 # Binary support
-zinit as="null" wait="1" lucid from="gh-r" for \
-    mv="exa* -> exa" sbin       ogham/exa \
-    sbin="fzf"       junegunn/fzf
+zinit wait"1" lucid from"gh-r" as"null" for \
+     sbin"fzf"          junegunn/fzf \
+     sbin"exa* -> exa"  ogham/exa
 
 zinit ice mv="*.zsh -> _fzf" as="completion"
 zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/completion.zsh'
 zinit snippet 'https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh'
-zinit ice mv="*.zsh -> _exa" as="completion"
-zinit snippet 'https://github.com/ogham/exa/tree/master/completions/completions.zsh'
+zinit ice as="completion"
+zinit snippet 'https://github.com/ogham/exa/blob/master/completions/zsh/_exa'
 zinit ice as="completion"
 zinit snippet 'https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker'
 zinit ice as="completion"

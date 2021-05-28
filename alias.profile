@@ -17,6 +17,10 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 # http server
 alias anywhere='http-server'
 
+if [ "$(command -v proxychains4)" != "" ]; then
+    alias x='proxychains4'
+fi
+
 # JDK
 function findJdk() {
     if [ "$(uname -a | grep Darwin)" != "" ]; then

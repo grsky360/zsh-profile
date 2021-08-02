@@ -13,6 +13,7 @@ alias gs='git status'
 alias gco='git checkout'
 alias gitc='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias gr="git rebase"
 
 # http server
 alias anywhere='http-server'
@@ -50,7 +51,7 @@ alias sdkmanager="jdk8 && sdkmanager"
 alias drone="DRONE_SERVER=https://ci.ilio.tech DRONE_TOKEN=3Y3L6ldYf2Gl4337cywjCTs0jWHNEFeW drone"
 
 # Docker
-alias dc="docker-compose"
+alias dc="docker compose"
 
 alias docker-shell="docker run -it --rm --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh"
 alias docker-alpine="docker run -it --rm alpine /bin/sh -c \"sed -i 's/https/http/g' /etc/apk/repositories && apk --no-cache add ca-certificates && /bin/sh\""

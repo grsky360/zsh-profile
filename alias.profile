@@ -16,7 +16,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias gr="git rebase"
 
 # http server
-alias anywhere='http-server'
+alias anywhere='http-server --cors'
 
 if [ "$(command -v proxychains4)" != "" ]; then
     alias x='proxychains4'

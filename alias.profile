@@ -4,7 +4,7 @@ if [ "$(command -v exa)" != "" ]; then
 fi
 alias ll='ls -lFhg'
 alias la='ls -a'
-alias l='ls -CF'
+alias l='ls -F'
 
 # Git
 alias ga='git add'

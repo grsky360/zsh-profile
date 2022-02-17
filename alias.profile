@@ -42,7 +42,7 @@ function jdk() {
 alias jdk8="jdk 1.8"
 alias jdk11="jdk 11"
 alias jdk17="jdk 17"
-jdk 1.8
+jdk 17
 
 alias gradlew="./gradlew"
 
